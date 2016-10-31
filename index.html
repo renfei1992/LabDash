@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie9"><![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lab Dash</title>
+
+        <!-- Vendor CSS -->
+        <link href="vendors/bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">        
+        <link href="vendors/bower_components/google-material-color/dist/palette.css" rel="stylesheet">
+        
+        <!-- CSS -->
+        <link href="css/app.min.1.css" rel="stylesheet">
+        <link href="css/app.min.2.css" rel="stylesheet"> 
+        
+    </head>
+    <body data-ma-header="green">
+        <div class="space">
+        </div>
+        <section id="main">
+            <section id="content">
+                <div class="container">
+                    <div class="card" id="labdash">
+                    <!-- Title Card -->
+                        <div class="card-header">
+                            <h2>Lab Dash <small>Information Interaction Lab, the University of Michigan School of Information</small></h2>
+                        </div>
+                    </div>
+
+                    <div id="c-grid" class="clearfix" data-columns>
+
+                        <!-- Sign In Card -->
+                        <div class="card c-dark palette-Brown-200 bg recent-signups" id="signin">
+                            <div class="card-header ch-dark palette-Brown-500 bg">
+                                <h2>Sign Ins</h2>
+                            </div>
+                            <div class="card-body">
+                                <ul class="rs-list">
+                                    <li>
+                                        <a href="">
+                                            <div class="avatar-char">B</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img class="avatar-img" src="img/profile-pics/Michael.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img class="avatar-img" src="img/profile-pics/Fei.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <div class="avatar-char">Z</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <div class="avatar-char">C</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img class="avatar-img" src="img/profile-pics/Aaron.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img class="avatar-img" src="img/profile-pics/Anay.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img class="avatar-img" src="img/profile-pics/Kanchi.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img class="avatar-img" src="img/profile-pics/Licheng.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <div class="avatar-char">F</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <div class="avatar-char">E</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <div class="avatar-char">A</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <div class="avatar-char">M</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img class="avatar-img" src="img/profile-pics/Annabel.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <div class="avatar-char">I</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Weather Card -->
+                        <div class="card palette-Purple-500 bg" id="weather">
+                            <ul class="actions a-alt">
+                            </ul>
+                            <div id="c-weather"></div>
+                        </div>
+
+                        <!-- Todo Card -->
+                        <div class="card" id="todo-lists">
+                            <div class="card-header ch-dark palette-Blue-500 bg" id="todoheader">
+                                <h2>Todo lists</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="list-group lg-alt">
+                                    <div class="list-group-item-header palette-Purple text">Today</div>
+
+                                    <div class="list-group-item media">
+                                        <div class="pull-left">
+                                            <div class="avatar-char ac-check">
+                                                <input class="acc-check" type="checkbox" checked>
+
+                                                <span class="acc-helper palette-Purple-300 bg"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="media-body">
+                                            <div class="lgi-heading">Javis Team Meeting</div>
+                                            <small class="lgi-text">08:55 AM</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="list-group-item-header palette-Light-Blue text">Tomorrow</div>
+
+                                    <div class="list-group-item media">
+                                        <div class="pull-left">
+                                            <div class="avatar-char ac-check">
+                                                <input class="acc-check" type="checkbox">
+
+                                                <span class="acc-helper palette-Light-Blue bg"></span>
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="lgi-heading">Lab Hackathon</div>
+                                            <small class="lgi-text">10:30 PM</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="list-group-item media">
+                                        <div class="pull-left">
+                                            <div class="avatar-char ac-check">
+                                                <input class="acc-check" type="checkbox">
+
+                                                <span class="acc-helper palette-Light-Blue bg"></span>
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="lgi-heading">Renovation Starts</div>
+                                            <small class="lgi-text">11:02 PM</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slack Message Card -->
+                        <div class="card" id="slack">
+                            <div class="card-header ch-dark palette-Blue-Grey-500 bg">
+                                <h2>Slack Announcements</h2>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="list-group lg-alt c-overflow">
+                                    <div class="list-group-item media palette-Blue-Grey-200 bg" id="firstmslack">
+                                        <div class="pull-left">
+                                            <img class="avatar-img" src="img/profile-pics/Fei.png" alt="">
+                                        </div>
+
+                                        <div class="media-body">
+                                            <div class="lgi-heading">Fei Ren <small>1:30 PM, Today</small></div>
+                                            <small class="">Hi <b>@atang @yingjin</b> I will not be in the lab today, but I will be there from 2 pm tmr.</small>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item media palette-Blue-Grey-300 bg" id="secondslack">
+                                        <div class="pull-left">
+                                            <img class="avatar-img" src="img/profile-pics/Michael.jpg" alt="">
+                                        </div>
+
+                                        <div class="media-body">
+                                            <div class="lgi-heading">Michael Nebeling <small>2:43 PM, Today</small></div>
+                                            <small class="">I separated Jarvis and Room 3356 to create more space for the teams</small>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item media palette-Blue-Grey-400 bg" id="thirdslack">
+                                        <div class="pull-left">
+                                            <img class="avatar-img" src="img/profile-pics/Aaron.png" alt="">
+                                        </div>
+
+                                        <div class="media-body">
+                                            <div class="lgi-heading">Aaron Tang <small>2:55 PM, Today</small></div>
+                                            <small class=""><b>@Fei</b> sure, see you later</small>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item media" id="slackpeople">
+                                        <div class="pull-left">
+                                            <img class="avatar-img" src="img/profile-pics/Aaron.png" alt="">
+                                            <img class="avatar-img" src="img/profile-pics/Michael.jpg" alt="">
+                                            <img class="avatar-img" src="img/profile-pics/Fei.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Device Card -->
+                        <div class="card palette-Amber bg" id="device">
+                            <div class="card-header ch-dark palette-Amber-500 bg" id="double">
+                                <h2>Device Information</h2>
+                            </div>
+                            <div class="pie-grid clearfix">
+                                <div class="col-md-12 pg-item">
+                                    <img src="img/icons/device/TV.png" alt=""> 
+                                    <span id="devicename">TV1 - 82''</span>
+                                    <span id="devicestate">Connected to Fei's Mac </span>
+                                </div>
+                            </div>
+                            <div class="pie-grid clearfix" id="double">
+                                <div class="col-md-12 pg-item">
+                                    <img src="img/icons/device/TV.png" alt=""> 
+                                    <span id="devicename">TV2 - Front</span>
+                                    <span id="devicestate">Connected to Terry's... </span>
+                                </div>
+                            </div>
+                            <div class="pie-grid clearfix">
+                                <div class="col-md-12 pg-item">
+                                    <img src="img/icons/device/TV.png" alt=""> 
+                                    <span id="devicename">TV3 - Back</span>
+                                    <span id="devicestate">Not Connected </span>
+                                </div>
+                            </div>
+                            <div class="pie-grid clearfix" id="double">
+                                <div class="col-md-12 pg-item">
+                                    <img src="img/icons/device/echo.png" alt=""> 
+                                    <span id="devicename">Alexa</span>
+                                    <span id="devicestate">Connected to Kanchi...</span>
+                                </div>
+                            </div>
+                            <div class="pie-grid clearfix">
+                                <div class="col-md-12 pg-item">
+                                    <img src="img/icons/device/kinect.png" alt=""> 
+                                    <span id="devicename">Kinect1</span>
+                                    <span id="devicestate">Connected to Michael... </span>
+                                </div>
+                            </div>
+                            <div class="pie-grid clearfix" id="double">
+                                <div class="col-md-12 pg-item">
+                                    <img src="img/icons/device/kinect.png" alt=""> 
+                                    <span id="devicename">Kinect2</span>
+                                    <span id="devicestate">Not Connected </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer id="footer">
+                Copyright &copy; 2016 Information Interaction Lab
+
+                <ul class="f-menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Dashboard</a></li>
+                    <li><a href="">Reports</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </footer>
+
+        </section>
+
+        <!-- Page Loader -->
+        <div class="page-loader palette-Teal bg">
+            <div class="preloader pl-xl pls-white">
+                <svg class="pl-circular" viewBox="25 25 50 50">
+                    <circle class="plc-path" cx="50" cy="50" r="20"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Javascript Libraries -->
+        <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="vendors/bower_components/Waves/dist/waves.min.js"></script>
+        <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+        <script src="vendors/bower_components/moment/min/moment.min.js"></script>
+        <script src="vendors/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+        <script src="vendors/bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
+        <script src="vendors/bower_components/salvattore/dist/salvattore.min.js"></script>
+
+        <script src="vendors/bower_components/flot/jquery.flot.js"></script>
+        <script src="vendors/bower_components/flot/jquery.flot.resize.js"></script>
+        <script src="vendors/bower_components/flot.curvedlines/curvedLines.js"></script>
+        <script src="vendors/sparklines/jquery.sparkline.min.js"></script>
+        <script src="vendors/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+        <script src="js/flot-charts/curved-line-chart.js"></script>
+        <script src="js/flot-charts/line-chart.js"></script>
+        <script src="js/charts.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/actions.js"></script>
+        <script src="js/demo.js"></script>
+
+    </body>
+  </html>
