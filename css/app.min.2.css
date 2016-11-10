@@ -125,10 +125,19 @@
 [data-ma-header="green"] #header {
   background-color: #43A047;
 }
-
 [data-ma-header="green"] .smm-alerts > li.active,
 [data-ma-header="green"] .main-menu li.active > a {
   color: #43A047;
+}
+
+[data-ma-header="dark"]:before,
+[data-ma-header="dark"] #header {
+  background-color: #1E262B;
+}
+
+[data-ma-header="dark"] .smm-alerts > li.active,
+[data-ma-header="dark"] .main-menu li.active > a {
+  color: #1E262B;
 }
 
 [data-ma-header="lightgreen"]:before,
@@ -2027,9 +2036,9 @@ select.chosen {
   float:right;
 }
 #device #double{
-  background-color:#F19700;
+  background-color:#2b343a;
 }
-#device .card-header,#slack .card-header, #slackpeople, #signin .card-header{
+#device .card-header,#slack .card-header, #slackpeople, #signin .card-header, #trello .card-header{
   box-shadow: 0 3px 10px rgba(0,0, 0, 0.38);
   z-index:999;
 }
@@ -2040,17 +2049,75 @@ select.chosen {
   margin-right:20px;
 }
 #slackpeople{
-  background: url(../img/profile-pics/background.png) repeat left center scroll;
+  background-color:rgba(255,255,255,.1);
 }
 #firstslack{
   z-index:200;
 }
 #secondslack{
-  box-shadow: 0px 3px 8px 5px rgba(0,0,0,0.38);
+  box-shadow: 0px -2px 6px rgba(0,0,0,0.25);
+  background-color:rgba(255,255,255,.02);
   z-index:300;
 }
 #thirdslack{
-  box-shadow: 0px 3px 8px 5px rgba(0,0,0,0.38);
+  box-shadow: 0px -2px 6px rgba(0,0,0,0.25);
+  background-color:rgba(255,255,255,.05);
   z-index:999;
 }
+.tab-nav li > a{
+  color:#757575;
+}
+.tab-nav li.active > a{
+  color:white;
+}
+.tab-nav:not([data-tab-color]) > li > a:after{
+  background:white;
+}
+h1, h2, h3, h4{
+  color:white;
+}
+body{
+  background-color:#1E262B;
+}
+.card-header{
+  background-color:#2b343a;
+}
+.rs-list{
+  background-color:unset;
+}
+.rs-list .avatar-char, .palette-Light-Blue.bg{
+  background: #2b343a;
+  background-color:rgba(255,255,255,.15);
+}
+#c-weather{
+  background-color:#2b343a;
+}
+.cw-upcoming ul{
+  background-color:#222c32;
+}
+.text, .lgi-heading{
+  color:white;
+}
+.ac-check .acc-check:checked + span{
+  background: #2b343a;
+  background-color:rgba(255,255,255,.15);
+}
+#todo-lists .checked{
+  text-decoration:white line-through;
+  color:white;
+}
+#single{
+  background-color:#222c32;
+}
+.pg-item:nth-child(odd){
+  background-color:unset;
+}
+.tab-nav{
+  box-shadow: inset 0 -2px 0 0 #757575;
+}
+
+
+
+
+
 

@@ -18,7 +18,7 @@
         <link href="css/app.min.2.css" rel="stylesheet"> 
         
     </head>
-    <body data-ma-header="green">
+    <body data-ma-header="dark">
         <div class="space">
         </div>
         <section id="main">
@@ -32,10 +32,9 @@
                     </div>
 
                     <div id="c-grid" class="clearfix" data-columns>
-
                         <!-- Sign In Card -->
-                        <div class="card c-dark palette-Brown-200 bg recent-signups" id="signin">
-                            <div class="card-header ch-dark palette-Brown-500 bg">
+                        <div class="card recent-signups" id="signin">
+                            <div class="card-header">
                                 <h2>Sign Ins</h2>
                             </div>
                             <div class="card-body">
@@ -120,7 +119,7 @@
                         </div>
 
                         <!-- Weather Card -->
-                        <div class="card palette-Purple-500 bg" id="weather">
+                        <div class="card" id="weather">
                             <ul class="actions a-alt">
                             </ul>
                             <div id="c-weather"></div>
@@ -128,19 +127,18 @@
 
                         <!-- Todo Card -->
                         <div class="card" id="todo-lists">
-                            <div class="card-header ch-dark palette-Blue-500 bg" id="todoheader">
+                            <div class="card-header" id="todoheader">
                                 <h2>Todo lists</h2>
                             </div>
                             <div class="card-body">
                                 <div class="list-group lg-alt">
-                                    <div class="list-group-item-header palette-Purple text">Today</div>
-
+                                    <div class="list-group-item-header text">Today</div>
                                     <div class="list-group-item media">
                                         <div class="pull-left">
                                             <div class="avatar-char ac-check">
                                                 <input class="acc-check" type="checkbox" checked>
 
-                                                <span class="acc-helper palette-Purple-300 bg"></span>
+                                                <span class="acc-helper palette-Light-Blue bg"></span>
                                             </div>
                                         </div>
 
@@ -150,7 +148,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="list-group-item-header palette-Light-Blue text">Tomorrow</div>
+                                    <div class="list-group-item-header text">Tomorrow</div>
 
                                     <div class="list-group-item media">
                                         <div class="pull-left">
@@ -185,13 +183,13 @@
 
                         <!-- Slack Message Card -->
                         <div class="card" id="slack">
-                            <div class="card-header ch-dark palette-Blue-Grey-500 bg">
+                            <div class="card-header">
                                 <h2>Slack Announcements</h2>
                             </div>
 
                             <div class="card-body">
                                 <div class="list-group lg-alt c-overflow">
-                                    <div class="list-group-item media palette-Blue-Grey-200 bg" id="firstmslack">
+                                    <div class="list-group-item media" id="firstslack">
                                         <div class="pull-left">
                                             <img class="avatar-img" src="img/profile-pics/Fei.png" alt="">
                                         </div>
@@ -201,17 +199,16 @@
                                             <small class="">Hi <b>@atang @yingjin</b> I will not be in the lab today, but I will be there from 2 pm tmr.</small>
                                         </div>
                                     </div>
-                                    <div class="list-group-item media palette-Blue-Grey-300 bg" id="secondslack">
+                                    <div class="list-group-item media" id="secondslack">
                                         <div class="pull-left">
                                             <img class="avatar-img" src="img/profile-pics/Michael.jpg" alt="">
                                         </div>
-
                                         <div class="media-body">
                                             <div class="lgi-heading">Michael Nebeling <small>2:43 PM, Today</small></div>
                                             <small class="">I separated Jarvis and Room 3356 to create more space for the teams</small>
                                         </div>
                                     </div>
-                                    <div class="list-group-item media palette-Blue-Grey-400 bg" id="thirdslack">
+                                    <div class="list-group-item media" id="thirdslack">
                                         <div class="pull-left">
                                             <img class="avatar-img" src="img/profile-pics/Aaron.png" alt="">
                                         </div>
@@ -234,10 +231,10 @@
 
                         <!-- Device Card -->
                         <div class="card palette-Amber bg" id="device">
-                            <div class="card-header ch-dark palette-Amber-500 bg" id="double">
+                            <div class="card-header">
                                 <h2>Device Information</h2>
                             </div>
-                            <div class="pie-grid clearfix">
+                            <div class="pie-grid clearfix" id="single">
                                 <div class="col-md-12 pg-item">
                                     <img src="img/icons/device/TV.png" alt=""> 
                                     <span id="devicename">TV1 - 82''</span>
@@ -251,7 +248,7 @@
                                     <span id="devicestate">Connected to Terry's... </span>
                                 </div>
                             </div>
-                            <div class="pie-grid clearfix">
+                            <div class="pie-grid clearfix" id="single">
                                 <div class="col-md-12 pg-item">
                                     <img src="img/icons/device/TV.png" alt=""> 
                                     <span id="devicename">TV3 - Back</span>
@@ -265,7 +262,7 @@
                                     <span id="devicestate">Connected to Kanchi...</span>
                                 </div>
                             </div>
-                            <div class="pie-grid clearfix">
+                            <div class="pie-grid clearfix" id="single">
                                 <div class="col-md-12 pg-item">
                                     <img src="img/icons/device/kinect.png" alt=""> 
                                     <span id="devicename">Kinect1</span>
@@ -280,6 +277,64 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Trello Card -->
+                        <div class="card" id="trello">
+                            <div class="card-header ch-dark">
+                                <h2>Trello Tasks</h2>
+                            </div>
+                            <div class="card-body">
+                                <ul class="tab-nav tn-justified tn-icon" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a class="col-sx-4" href="#tab-1" aria-controls="tab-1" role="tab" data-toggle="tab">
+                                            <span id="tabtitle">XDBrowser</span>
+                                        </a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a class="col-xs-4" href="#tab-2" aria-controls="tab-2" role="tab" data-toggle="tab">
+                                            <span id="tabtitle">Meeting Notes</span>
+                                        </a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a class="col-xs-4" href="#tab-3" aria-controls="tab-3" role="tab" data-toggle="tab">
+                                            <span id="tabtitle">Room 3356</span>
+                                        </a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a class="col-xs-4" href="#tab-3" aria-controls="tab-3" role="tab" data-toggle="tab">
+                                            <span id="tabtitle">Alexa</span>
+                                        </a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a class="col-xs-4" href="#tab-3" aria-controls="tab-3" role="tab" data-toggle="tab">
+                                            <span id="tabtitle">Jarvis</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content p-20">
+                                    <div role="tabpanel" class="tab-pane animated fadeIn in active" id="tab-1">
+                                        <img src="img/headers/sm/p1.png" class="img-responsive m-b-15 w-100" alt="">
+                                        <span class="text"><strong id="trelloperson">Michael</strong> completed fix bug: push button is not showing on my Macbook <br><small>yesterday at 10:19 AM</small></span>
+                                    </div>
+
+                                    <div role="tabpanel" class="tab-pane animated fadeIn" id="tab-2">
+                                        <img src="img/headers/sm/p2.png" class="img-responsive m-b-15 w-100" alt="">
+                                        <span class="text"><strong id="trelloperson">Licheng</strong> cadded Phase 2 Compare different interfaces to this card <br><small>Oct 26 at 11:14 AM</small></span>
+                                    </div>
+
+                                    <div role="tabpanel" class="tab-pane animated fadeIn" id="tab-2">
+                                        <img src="img/headers/sm/p2.png" class="img-responsive m-b-15 w-100" alt="">
+                                        <span class="text"><strong id="trelloperson">Licheng</strong> cadded Phase 2 Compare different interfaces to this card <br><small>Oct 26 at 11:14 AM</small></span>
+                                    </div>
+
+                                    <div role="tabpanel" class="tab-pane animated fadeIn" id="tab-3">
+                                        <img src="img/headers/sm/p3.png" class="img-responsive m-b-15 w-100" alt="">
+                                        <span class="text"><strong id="trelloperson">Fei</strong> attached Book_the_room.png to this card <br><small>Sep 26 at 12:54 AM</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
